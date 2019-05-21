@@ -26,15 +26,7 @@ namespace Q143749 {
             this.components = new System.ComponentModel.Container();
             this.controlNavigator1 = new DevExpress.XtraEditors.ControlNavigator();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nwindDataSet = new Q143749.nwindDataSet();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colCategoryID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colCategoryName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDescription = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colPicture = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colIcon_17 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colIcon_25 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -42,10 +34,7 @@ namespace Q143749 {
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.categoriesTableAdapter = new Q143749.nwindDataSetTableAdapters.CategoriesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
@@ -66,9 +55,7 @@ namespace Q143749 {
             // 
             // gridControl1
             // 
-            this.gridControl1.DataSource = this.categoriesBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Name = "";
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
@@ -77,69 +64,10 @@ namespace Q143749 {
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
-            // categoriesBindingSource
-            // 
-            this.categoriesBindingSource.DataMember = "Categories";
-            this.categoriesBindingSource.DataSource = this.nwindDataSet;
-            // 
-            // nwindDataSet
-            // 
-            this.nwindDataSet.DataSetName = "nwindDataSet";
-            this.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // gridView1
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colCategoryID,
-            this.colCategoryName,
-            this.colDescription,
-            this.colPicture,
-            this.colIcon_17,
-            this.colIcon_25});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
-            // 
-            // colCategoryID
-            // 
-            this.colCategoryID.Caption = "CategoryID";
-            this.colCategoryID.FieldName = "CategoryID";
-            this.colCategoryID.Name = "colCategoryID";
-            this.colCategoryID.Visible = true;
-            this.colCategoryID.VisibleIndex = 0;
-            // 
-            // colCategoryName
-            // 
-            this.colCategoryName.Caption = "CategoryName";
-            this.colCategoryName.FieldName = "CategoryName";
-            this.colCategoryName.Name = "colCategoryName";
-            this.colCategoryName.Visible = true;
-            this.colCategoryName.VisibleIndex = 1;
-            // 
-            // colDescription
-            // 
-            this.colDescription.Caption = "Description";
-            this.colDescription.FieldName = "Description";
-            this.colDescription.Name = "colDescription";
-            this.colDescription.Visible = true;
-            this.colDescription.VisibleIndex = 2;
-            // 
-            // colPicture
-            // 
-            this.colPicture.Caption = "Picture";
-            this.colPicture.FieldName = "Picture";
-            this.colPicture.Name = "colPicture";
-            // 
-            // colIcon_17
-            // 
-            this.colIcon_17.Caption = "Icon_17";
-            this.colIcon_17.FieldName = "Icon_17";
-            this.colIcon_17.Name = "colIcon_17";
-            // 
-            // colIcon_25
-            // 
-            this.colIcon_25.Caption = "Icon_25";
-            this.colIcon_25.FieldName = "Icon_25";
-            this.colIcon_25.Name = "colIcon_25";
             // 
             // barManager1
             // 
@@ -151,6 +79,38 @@ namespace Q143749 {
             this.barManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barButtonItem1});
             this.barManager1.MaxItemId = 1;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlTop.Manager = this.barManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(472, 0);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 358);
+            this.barDockControlBottom.Manager = this.barManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(472, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
+            this.barDockControlLeft.Manager = this.barManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 358);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(472, 0);
+            this.barDockControlRight.Manager = this.barManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 358);
             // 
             // barButtonItem1
             // 
@@ -165,10 +125,6 @@ namespace Q143749 {
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1)});
             this.popupMenu1.Manager = this.barManager1;
             this.popupMenu1.Name = "popupMenu1";
-            // 
-            // categoriesTableAdapter
-            // 
-            this.categoriesTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -185,12 +141,11 @@ namespace Q143749 {
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -205,15 +160,6 @@ namespace Q143749 {
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraBars.PopupMenu popupMenu1;
-        private nwindDataSet nwindDataSet;
-        private System.Windows.Forms.BindingSource categoriesBindingSource;
-        private Q143749.nwindDataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
-        private DevExpress.XtraGrid.Columns.GridColumn colCategoryID;
-        private DevExpress.XtraGrid.Columns.GridColumn colCategoryName;
-        private DevExpress.XtraGrid.Columns.GridColumn colDescription;
-        private DevExpress.XtraGrid.Columns.GridColumn colPicture;
-        private DevExpress.XtraGrid.Columns.GridColumn colIcon_17;
-        private DevExpress.XtraGrid.Columns.GridColumn colIcon_25;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
