@@ -82,33 +82,29 @@
 			' 
 			Me.barDockControlTop.CausesValidation = False
 			Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
-			Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-			Me.barDockControlTop.Manager = Me.barManager1
-			Me.barDockControlTop.Size = New System.Drawing.Size(472, 0)
+            Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
+            Me.barDockControlTop.Size = New System.Drawing.Size(472, 0)
 			' 
 			' barDockControlBottom
 			' 
 			Me.barDockControlBottom.CausesValidation = False
 			Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-			Me.barDockControlBottom.Location = New System.Drawing.Point(0, 358)
-			Me.barDockControlBottom.Manager = Me.barManager1
-			Me.barDockControlBottom.Size = New System.Drawing.Size(472, 0)
+            Me.barDockControlBottom.Location = New System.Drawing.Point(0, 358)
+            Me.barDockControlBottom.Size = New System.Drawing.Size(472, 0)
 			' 
 			' barDockControlLeft
 			' 
 			Me.barDockControlLeft.CausesValidation = False
 			Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
-			Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
-			Me.barDockControlLeft.Manager = Me.barManager1
-			Me.barDockControlLeft.Size = New System.Drawing.Size(0, 358)
+            Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
+            Me.barDockControlLeft.Size = New System.Drawing.Size(0, 358)
 			' 
 			' barDockControlRight
 			' 
 			Me.barDockControlRight.CausesValidation = False
 			Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-			Me.barDockControlRight.Location = New System.Drawing.Point(472, 0)
-			Me.barDockControlRight.Manager = Me.barManager1
-			Me.barDockControlRight.Size = New System.Drawing.Size(0, 358)
+            Me.barDockControlRight.Location = New System.Drawing.Point(472, 0)
+            Me.barDockControlRight.Size = New System.Drawing.Size(0, 358)
 			' 
 			' barButtonItem1
 			' 
